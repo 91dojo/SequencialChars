@@ -19,6 +19,13 @@ namespace ContinuousChars
     {
         public bool IsContinuous(string input)
         {
+            if (input == null) throw new ArgumentNullException(nameof(input));
+
+            if (input.Length == 1)
+            {
+                return true;
+            }
+
             throw new NotImplementedException();
         }
     }
