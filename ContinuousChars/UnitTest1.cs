@@ -20,5 +20,12 @@ namespace ContinuousChars
             _validator = new Validator();
             Assert.IsTrue(_validator.IsContinuous("bc"));
         }
+
+        [TestMethod]
+        public void two_char_and_is_not_continuous()
+        {
+            _validator = new Validator();
+            Assert.IsFalse(_validator.IsContinuous("bd"));
+        }
     }
 }
