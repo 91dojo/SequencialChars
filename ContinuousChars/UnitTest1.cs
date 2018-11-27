@@ -27,5 +27,12 @@ namespace ContinuousChars
             _validator = new Validator();
             Assert.IsFalse(_validator.IsContinuous("bd"));
         }
+
+        [TestMethod]
+        public void two_char_upper_case_and_is_continuous()
+        {
+            _validator = new Validator();
+            Assert.IsTrue(_validator.IsContinuous("IJk"));
+        }
     }
 }
