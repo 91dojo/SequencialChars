@@ -10,7 +10,7 @@ namespace ContinuousChars
 
             var characterLookup = "abcdefghijklmnopqrstuvwxyz";
 
-            return characterLookup.Contains(input);
+            return characterLookup.Contains(input.ToLower());
         }
     }
 }
