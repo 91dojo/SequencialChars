@@ -13,7 +13,9 @@ namespace ContinuousChars
                 return true;
             }
 
-            throw new NotImplementedException();
+            var characterLookup = "abcdefghijklmnopqrstuvwxyz";
+
+            return characterLookup.Contains(input);
         }
     }
 }
